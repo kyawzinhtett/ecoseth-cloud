@@ -123,14 +123,14 @@
               </li>
 
               <li class="nav-item">
-                <a href="/users.html" class="nav-link active">
+                <a href="/users.html" class="nav-link">
                   <i class="nav-icon fas fa-users"></i>
                   <p>Users</p>
                 </a>
               </li>
 
               <li class="nav-item">
-                <a href="/withdraws.html" class="nav-link">
+                <a href="/withdraws.html" class="nav-link active">
                   <i class="nav-icon fas fa-minus-circle"></i>
                   <p>Withdraws</p>
                 </a>
@@ -192,7 +192,7 @@
         <div class="content-header">
           <div class="container-fluid">
             <div class="mb-2">
-              <h1 class="m-0">Users</h1>
+              <h1 class="m-0">Withdraws</h1>
             </div>
           </div>
         </div>
@@ -201,208 +201,154 @@
         <div class="content">
           <div class="container-fluid">
             <div class="card">
-              <div class="card-header">
-                <div class="row">
-                  <div class="col-md-6">
-                    <input
-                      class="form-control"
-                      type="search"
-                      placeholder="Search with user id or wallet address"
-                      aria-label="Search"
-                    />
-                  </div>
-                  <div class="col-md-6">
-                    <div class="float-right">
-                      <small>Connected Wallet:</small>
-                      <button type="button" class="btn btn-primary">
-                        Connect
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- /.card-header -->
               <div class="card-body p-0">
                 <table class="table table-striped">
                   <thead>
                     <tr>
                       <th style="width: 10px">#</th>
-                      <th>User Id</th>
-                      <th>Wallet Address</th>
-                      <th>Balance</th>
-                      <th>Real Balance (USDT)</th>
+                      <th>User</th>
+                      <th>Withdraw Address</th>
+                      <th>Type</th>
+                      <th>Amount</th>
                       <th>Status</th>
+                      <th>Submitted At</th>
                       <th style="width: 40px">Actions</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
                       <td>1</td>
+                      <td>763922</td>
+                      <td>123456789ldwofgwlllwfo1234dwfwwfw</td>
+                      <td>1</td>
+                      <td>100.00</td>
                       <td>
-                        <span>111481</span> <br />
-                        <span class="badge bg-success">joined</span>
+                        <span class="badge bg-warning">Pending</span>
                       </td>
-                      <td>
-                        <span>Wallet: 123456789ldwofgwlllwfo1234dwfwwfw</span>
-                        <br />
-                        <span
-                          >Spender: dwfwf2349ldwofgwlllwfo342er2fr2er31</span
-                        >
-                      </td>
-                      <td>
-                        <span>0</span> <br />
-                        <span class="badge bg-primary">
-                          16-10-2023 04:18 AM
-                        </span>
-                      </td>
-                      <td>
-                        <span>0.47</span> <br />
-                        <span class="badge bg-primary">
-                          16-10-2023 04:18 AM
-                        </span>
-                      </td>
-                      <td>
-                        <span class="badge bg-success">Approved</span>
-                      </td>
-                      <td>
-                        <button class="btn btn-secondary">
-                          <i class="fas fa-ellipsis-v"></i>
+                      <td>22-10-2023 01:52 AM</td>
+                      <td class="d-flex">
+                        <button class="btn btn-secondary btn-sm">
+                          Approve
+                        </button>
+                        <button class="btn btn-danger btn-sm ml-2">
+                          Reject
                         </button>
                       </td>
                     </tr>
                     <tr>
                       <td>2</td>
+                      <td>763922</td>
+                      <td>123456789ldwofgwlllwfo1234dwfwwfw</td>
+                      <td>0</td>
+                      <td>100.00</td>
                       <td>
-                        <span>111481</span> <br />
+                        <span class="badge bg-danger">Rejected</span>
                       </td>
-                      <td>
-                        <span>Wallet: 123456789ldwofgwlllwfo1234dwfwwfw</span>
-                        <br />
-                        <span
-                          >Spender: dwfwf2349ldwofgwlllwfo342er2fr2er31</span
-                        >
-                      </td>
-                      <td>
-                        <span>0</span> <br />
-                        <span class="badge bg-primary">
-                          16-10-2023 04:18 AM
-                        </span>
-                      </td>
-                      <td>
-                        <span>0.47</span> <br />
-                        <span class="badge bg-primary">
-                          16-10-2023 04:18 AM
-                        </span>
-                      </td>
-                      <td>
-                        <span class="badge bg-success">Approved</span>
-                      </td>
-                      <td>
-                        <button class="btn btn-secondary">
-                          <i class="fas fa-ellipsis-v"></i>
-                        </button>
-                      </td>
+                      <td>22-10-2023 01:52 AM</td>
+                      <td class="d-flex"></td>
                     </tr>
                     <tr>
                       <td>3</td>
+                      <td>763922</td>
+                      <td>123456789ldwofgwlllwfo1234dwfwwfw</td>
+                      <td>1</td>
+                      <td>100.00</td>
                       <td>
-                        <span>111481</span> <br />
-                        <span class="badge bg-success">joined</span>
+                        <span class="badge bg-danger">Rejected</span>
                       </td>
-                      <td>
-                        <span>Wallet: 123456789ldwofgwlllwfo1234dwfwwfw</span>
-                        <br />
-                        <span
-                          >Spender: dwfwf2349ldwofgwlllwfo342er2fr2er31</span
-                        >
-                      </td>
-                      <td>
-                        <span>0</span> <br />
-                        <span class="badge bg-primary">
-                          16-10-2023 04:18 AM
-                        </span>
-                      </td>
-                      <td>
-                        <span>0.47</span> <br />
-                        <span class="badge bg-primary">
-                          16-10-2023 04:18 AM
-                        </span>
-                      </td>
-                      <td>
-                        <span class="badge bg-success">Approved</span>
-                      </td>
-                      <td>
-                        <button class="btn btn-secondary">
-                          <i class="fas fa-ellipsis-v"></i>
-                        </button>
-                      </td>
+                      <td>22-10-2023 01:52 AM</td>
+                      <td class="d-flex"></td>
                     </tr>
                     <tr>
                       <td>4</td>
+                      <td>763922</td>
+                      <td>123456789ldwofgwlllwfo1234dwfwwfw</td>
+                      <td>1</td>
+                      <td>100.00</td>
                       <td>
-                        <span>111481</span> <br />
-                        <span class="badge bg-success">joined</span>
+                        <span class="badge bg-danger">Rejected</span>
                       </td>
+                      <td>22-10-2023 01:52 AM</td>
+                      <td class="d-flex"></td>
+                    </tr>
+                    <tr>
+                      <td>5</td>
+                      <td>763922</td>
+                      <td>123456789ldwofgwlllwfo1234dwfwwfw</td>
+                      <td>1</td>
+                      <td>100.00</td>
                       <td>
-                        <span>Wallet: 123456789ldwofgwlllwfo1234dwfwwfw</span>
-                        <br />
-                        <span
-                          >Spender: dwfwf2349ldwofgwlllwfo342er2fr2er31</span
-                        >
+                        <span class="badge bg-danger">Rejected</span>
                       </td>
+                      <td>22-10-2023 01:52 AM</td>
+                      <td class="d-flex"></td>
+                    </tr>
+                    <tr>
+                      <td>6</td>
+                      <td>763922</td>
+                      <td>123456789ldwofgwlllwfo1234dwfwwfw</td>
+                      <td>0</td>
+                      <td>100.00</td>
                       <td>
-                        <span>0</span> <br />
-                        <span class="badge bg-primary">
-                          16-10-2023 04:18 AM
-                        </span>
+                        <span class="badge bg-danger">Rejected</span>
                       </td>
+                      <td>22-10-2023 01:52 AM</td>
+                      <td class="d-flex"></td>
+                    </tr>
+                    <tr>
+                      <td>7</td>
+                      <td>763922</td>
+                      <td>123456789ldwofgwlllwfo1234dwfwwfw</td>
+                      <td>1</td>
+                      <td>100.00</td>
                       <td>
-                        <span>0.47</span> <br />
-                        <span class="badge bg-primary">
-                          16-10-2023 04:18 AM
-                        </span>
+                        <span class="badge bg-danger">Rejected</span>
                       </td>
+                      <td>22-10-2023 01:52 AM</td>
+                      <td class="d-flex"></td>
+                    </tr>
+                    <tr>
+                      <td>8</td>
+                      <td>763922</td>
+                      <td>123456789ldwofgwlllwfo1234dwfwwfw</td>
+                      <td>1</td>
+                      <td>100.00</td>
                       <td>
-                        <span class="badge bg-success">Approved</span>
+                        <span class="badge bg-danger">Rejected</span>
                       </td>
+                      <td>22-10-2023 01:52 AM</td>
+                      <td class="d-flex"></td>
+                    </tr>
+                    <tr>
+                      <td>9</td>
+                      <td>763922</td>
+                      <td>123456789ldwofgwlllwfo1234dwfwwfw</td>
+                      <td>1</td>
+                      <td>100.00</td>
                       <td>
-                        <button class="btn btn-secondary">
-                          <i class="fas fa-ellipsis-v"></i>
+                        <span class="badge bg-warning">Pending</span>
+                      </td>
+                      <td>22-10-2023 01:52 AM</td>
+                      <td class="d-flex">
+                        <button class="btn btn-secondary btn-sm">
+                          Approve
+                        </button>
+                        <button class="btn btn-danger btn-sm ml-2">
+                          Reject
                         </button>
                       </td>
                     </tr>
                     <tr>
-                      <td>5</td>
+                      <td>10</td>
+                      <td>763922</td>
+                      <td>123456789ldwofgwlllwfo1234dwfwwfw</td>
+                      <td>0</td>
+                      <td>100.00</td>
                       <td>
-                        <span>111481</span> <br />
+                        <span class="badge bg-danger">Rejected</span>
                       </td>
-                      <td>
-                        <span>Wallet: 123456789ldwofgwlllwfo1234dwfwwfw</span>
-                        <br />
-                        <span
-                          >Spender: dwfwf2349ldwofgwlllwfo342er2fr2er31</span
-                        >
-                      </td>
-                      <td>
-                        <span>0</span> <br />
-                        <span class="badge bg-primary">
-                          16-10-2023 04:18 AM
-                        </span>
-                      </td>
-                      <td>
-                        <span>0.47</span> <br />
-                        <span class="badge bg-primary">
-                          16-10-2023 04:18 AM
-                        </span>
-                      </td>
-                      <td>
-                        <span class="badge bg-success">Approved</span>
-                      </td>
-                      <td>
-                        <button class="btn btn-secondary">
-                          <i class="fas fa-ellipsis-v"></i>
-                        </button>
-                      </td>
+                      <td>22-10-2023 01:52 AM</td>
+                      <td class="d-flex"></td>
                     </tr>
                   </tbody>
                 </table>
