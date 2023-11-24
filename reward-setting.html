@@ -116,7 +116,7 @@
               data-accordion="false"
             >
               <li class="nav-item">
-                <a href="/" class="nav-link active">
+                <a href="/" class="nav-link">
                   <i class="nav-icon fas fa-th"></i>
                   <p>Dashboard</p>
                 </a>
@@ -137,7 +137,7 @@
               </li>
 
               <li class="nav-item">
-                <a href="/reward-setting.html" class="nav-link">
+                <a href="/reward-setting.html" class="nav-link active">
                   <i class="nav-icon fas fa-plus-circle"></i>
                   <p>Reward Setting</p>
                 </a>
@@ -192,7 +192,7 @@
         <div class="content-header">
           <div class="container-fluid">
             <div class="mb-2">
-              <h1 class="m-0">Dashboard</h1>
+              <h1 class="m-0">Reward Settings</h1>
             </div>
           </div>
         </div>
@@ -200,79 +200,96 @@
         <!-- Main content -->
         <div class="content">
           <div class="container-fluid">
-            <!-- Info boxes -->
             <div class="row">
-              <div class="col-12 col-sm-6 col-md-3">
-                <div class="info-box">
-                  <span class="info-box-icon bg-primary elevation-1"
-                    ><i class="fas fa-users"></i
-                  ></span>
-
-                  <div class="info-box-content">
-                    <span class="info-box-text">Registered Users</span>
-                    <span class="info-box-number">38</span>
+              <div class="col-md-8">
+                <div class="card">
+                  <div class="card-body table-responsive p-0">
+                    <table class="table table-striped text-nowrap">
+                      <thead>
+                        <tr>
+                          <th style="width: 10px">#</th>
+                          <th>Name</th>
+                          <th>Minimum Amount</th>
+                          <th>Maximum Amount</th>
+                          <th>Percent</th>
+                          <th style="width: 40px">Actions</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td>level-1</td>
+                          <td>1000</td>
+                          <td>5000</td>
+                          <td>4%</td>
+                          <td class="d-flex">
+                            <button class="btn btn-secondary btn-sm">
+                              <i class="fas fa-edit"></i>
+                            </button>
+                            <button class="btn btn-danger btn-sm ml-2">
+                              <i class="fas fa-trash-alt"></i>
+                            </button>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
                   </div>
+                  <!-- /.card-body -->
                 </div>
               </div>
-
-              <div class="col-12 col-sm-6 col-md-3">
-                <div class="info-box mb-3">
-                  <span class="info-box-icon bg-info elevation-1"
-                    ><i class="fas fa-user-check"></i
-                  ></span>
-
-                  <div class="info-box-content">
-                    <span class="info-box-text">Joined Users</span>
-                    <span class="info-box-number">31</span>
+              <div class="col-md-4">
+                <div class="card">
+                  <div class="card-header bg-primary">
+                    Add new reward setting
                   </div>
-                </div>
-              </div>
 
-              <!-- fix for small devices only -->
-              <div class="clearfix hidden-md-up"></div>
-
-              <div class="col-12 col-sm-6 col-md-3">
-                <div class="info-box mb-3">
-                  <span class="info-box-icon bg-success elevation-1"
-                    ><i class="fas fa-dollar-sign"></i
-                  ></span>
-
-                  <div class="info-box-content">
-                    <span class="info-box-text">Allowed USDT</span>
-                    <span class="info-box-number">173.52</span>
+                  <div class="card-body">
+                    <div class="mb-3">
+                      <label for="name" class="form-label">Name</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="name"
+                        placeholder="Enter name"
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label for="minimumAmount" class="form-label"
+                        >Minumum Amount</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="minimumAmount"
+                        placeholder="Enter minimum amount"
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label for="maximumAmount" class="form-label"
+                        >Maximum Amount</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="maximumAmount"
+                        placeholder="Enter maximum amount"
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label for="percent" class="form-label">Percent</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="percent"
+                        placeholder="Enter percent"
+                      />
+                    </div>
                   </div>
-                </div>
-              </div>
-
-              <div class="col-12 col-sm-6 col-md-3">
-                <div class="info-box mb-3">
-                  <span class="info-box-icon bg-warning elevation-1"
-                    ><i class="fas fa-dollar-sign"></i
-                  ></span>
-
-                  <div class="info-box-content">
-                    <span class="info-box-text">Total USDT</span>
-                    <span class="info-box-number">173.52</span>
+                  <!-- /.card-body -->
+                  <div class="card-footer">
+                    <button class="btn btn-primary">Save</button>
                   </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- CHART -->
-            <div class="card card-primary">
-              <div class="card-body">
-                <p>This month registrations</p>
-
-                <div class="chart">
-                  <canvas
-                    id="areaChart"
-                    style="
-                      min-height: 250px;
-                      height: 250px;
-                      max-height: 250px;
-                      max-width: 100%;
-                    "
-                  ></canvas>
+                  <!-- /.card-footer -->
                 </div>
               </div>
             </div>
@@ -300,81 +317,5 @@
     <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
     <!-- AdminLTE App -->
     <script src="dist/js/adminlte.min.js"></script>
-    <!-- ChartJS -->
-    <script src="plugins/chart.js/Chart.min.js"></script>
-    <!-- Page specific script -->
-    <script>
-      $(function () {
-        // ChartJS
-
-        //--------------
-        //- AREA CHART -
-        //--------------
-
-        // Get context with jQuery - using jQuery's .get() method.
-        var areaChartCanvas = $("#areaChart").get(0).getContext("2d");
-
-        var areaChartData = {
-          labels: [
-            "January",
-            "February",
-            "March",
-            "April",
-            "May",
-            "June",
-            "July",
-            "August",
-            "September",
-            "October",
-            "November",
-            "December",
-          ],
-          datasets: [
-            {
-              label: "Registered Users",
-              backgroundColor: "rgba(60,141,188,0.9)",
-              borderColor: "rgba(60,141,188,0.8)",
-              pointRadius: false,
-              pointColor: "#3b8bba",
-              pointStrokeColor: "rgba(60,141,188,1)",
-              pointHighlightFill: "#fff",
-              pointHighlightStroke: "rgba(60,141,188,1)",
-              data: [28, 48, 40, 19, 86, 27, 90, 60, 10, 5, 0, 0],
-            },
-          ],
-        };
-
-        var areaChartOptions = {
-          maintainAspectRatio: false,
-          responsive: true,
-          legend: {
-            display: false,
-          },
-          scales: {
-            xAxes: [
-              {
-                gridLines: {
-                  display: false,
-                },
-              },
-            ],
-            yAxes: [
-              {
-                gridLines: {
-                  display: false,
-                },
-              },
-            ],
-          },
-        };
-
-        // This will get the first returned node in the jQuery collection.
-        new Chart(areaChartCanvas, {
-          type: "line",
-          data: areaChartData,
-          options: areaChartOptions,
-        });
-      });
-    </script>
   </body>
 </html>
